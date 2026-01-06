@@ -1,4 +1,4 @@
-.PHONY: help setup lint format test run clean
+.PHONY: help setup lint format test run clean demo-log
 
 help:
 	@echo "make setup   - install deps"
@@ -6,6 +6,7 @@ help:
 	@echo "make format  - ruff format"
 	@echo "make test    - pytest"
 	@echo "make run     - run entrypoint"
+	@echo "make demo-log - run with logging demo"
 	@echo "make clean   - remove caches"
 
 setup:
@@ -21,7 +22,10 @@ test:
 	uv run pytest tests/ -v --cov=src
 
 run:
-	uv run python src/security_automation/main.py
+	@uv run python -m security_automation
+
+demo-log:
+	@LOG_LEVEL=INFO uv run python -m security_automation
 
 clean:
 	rm -rf .pytest_cache .ruff_cache .coverage htmlcov dist build *.egg-info
