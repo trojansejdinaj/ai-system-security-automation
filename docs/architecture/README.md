@@ -9,6 +9,7 @@ As of Week 01, it documents **intended architectural direction**, not implemente
 
 ## Contents
 
+- **[Logging](logging.md)** - Structured JSON logging and correlation ID architecture
 - **System Design** - High-level architecture and component overview
 - **Security Model** - Security considerations and threat modeling
 - **Data Flow** - Information flow between components

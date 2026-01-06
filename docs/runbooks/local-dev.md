@@ -1,12 +1,23 @@
-# Local development runbook
+# Local Development Runbook
 
-## Prereqs
-- Python 3.11+
-- `uv` installed
+This document describes how to set up, run, and validate the **AI System Security Automation** project locally.
 
-## Commands
+It reflects the current, supported workflow and tooling.
+
+---
+
+## Prerequisites
+
+### System
+- Linux or WSL2 (recommended)
+- Python **3.12**
+- Git
+- Docker (optional, for later weeks)
+
+### Python tooling
+- `uv` (used for virtualenv + dependency management)
+
+Verify:
 ```bash
-make setup
-make lint
-make test
-make run
+python3 --version
+uv --version
