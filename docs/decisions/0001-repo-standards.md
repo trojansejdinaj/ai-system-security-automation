@@ -1,7 +1,7 @@
 # ADR-0001: Repo standards for AI System Security Automation
 
 ## Status
-Accepted — 2026-01-06
+Accepted — 2026-01-05
 
 ## Context
 We need consistent repo standards across portfolios so work stays reproducible, auditable, and easy to maintain.
